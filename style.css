@@ -200,6 +200,9 @@ footer {
 }
 
 .light .card {
+  git add .
+git commit -m "atualização do site"
+git push origin main
   background: white;
   border: 1px solid #ccc;
 }
