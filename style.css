@@ -1,1 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b0b1f, #050510);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 25px;
+  background: rgba(20, 20, 50, 0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+header h1 {
+  font-size: 18px;
+  color: cyan;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #00f7ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* BOTÕES */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, cyan, #5f00ff);
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px cyan;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, rgba(0,255,255,0.15), rgba(120,0,255,0.15));
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+/* SEÇÕES */
+.secao {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* CARDS GLASS */
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
+
+/* QUIZ */
+#quiz {
+  text-align: center;
+}
+
+.botoes {
+  margin-top: 15px;
+}
+
+.botoes button {
+  margin: 10px;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #00f7ff;
+}
+
+/* BARRA */
+.barra {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#progresso {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, cyan, #7a00ff);
+  transition: 0.4s;
+}
+
+/* ALERTA */
+#alertaBox {
+  margin-top: 15px;
+  color: #ffcc00;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(20,20,50,0.7);
+  border-top: 1px solid rgba(0,255,255,0.2);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* TEMA CLARO */
+.light {
+  background: #f2f2f2;
+  color: black;
+}
+
+.light header,
+.light footer {
+  background: white;
+}
+
+.light .card {
+  background: white;
+  border: 1px solid #ccc;
+}
