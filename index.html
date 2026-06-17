@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA e Cidadania Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+
+<header>
+  <h1>🧠 IA & Cidadania Digital</h1>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#conteudo">Conteúdo</a>
+    <a href="#alertas">Alertas</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <button id="temaBtn">🌙 Tema</button>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>O futuro da informação está nas suas mãos</h2>
+  <p>Deepfakes, fake news e inteligência artificial mudaram a internet.</p>
+
+  <button onclick="scrollToSection('conteudo')">Explorar conteúdo ↓</button>
+</section>
+
+<main>
+
+<section id="conteudo" class="secao">
+  <h2>📡 O que é Cidadania Digital?</h2>
+  <p>É o uso consciente, seguro e responsável da tecnologia e da internet.</p>
+
+  <div class="cards">
+    <div class="card">🔐 Segurança online</div>
+    <div class="card">🤝 Respeito digital</div>
+    <div class="card">📚 Informação correta</div>
+  </div>
+</section>
+
+<section id="alertas" class="secao">
+  <h2>⚠️ Perigos da IA na internet</h2>
+
+  <ul>
+    <li>Deepfakes realistas que enganam pessoas</li>
+    <li>Fake news automatizadas</li>
+    <li>Golpes digitais sofisticados</li>
+  </ul>
+
+  <button onclick="mostrarAlerta()">Ver exemplo de alerta</button>
+
+  <p id="alertaBox"></p>
+</section>
+
+<section id="quiz" class="secao">
+  <h2>🧪 Quiz Interativo</h2>
+
+  <p id="pergunta">Carregando...</p>
+
+  <div class="botoes">
+    <button onclick="responder(true)">✔ Verdadeiro</button>
+    <button onclick="responder(false)">✖ Falso</button>
+  </div>
+
+  <p id="feedback"></p>
+  <p>⭐ Pontos: <span id="pontos">0</span></p>
+
+  <div class="barra">
+    <div id="progresso"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>#cidadaniadigital2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
